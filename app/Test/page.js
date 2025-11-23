@@ -107,7 +107,7 @@ const Test = () => {
 
   return (
     <div id="testPage">
-      <Header section="Intro"/>
+      <Header section="Test"/>
       <div className="testContainer">
         <p className="testTitle uppercase">To Start Analysis</p>
         <div className="testMiddle">

@@ -106,7 +106,7 @@ const Results = () => {
       localStorage.setItem("analysisResults", JSON.stringify(data));
 //8. Notify user + navigate: So user sees a message, then 
 // gets redirected to the next page.
-      alert("Image analyzed successfully");
+      alert("Thanks Tims, Image analyzed successfully");
       router.push("/AI.Analysis");
       console.log("API response:", data);
       // 9. Error handling: If anything fails, it logs the issue.
@@ -125,7 +125,7 @@ const Results = () => {
   //UI / JSX
   return (
     <div id="results">
-      <Header section="Intro" />
+      <Header section="Result" />
       <div className="resultsContainer">
         <p className="resultsTitle uppercase">To start analysis</p>
         

@@ -7,11 +7,7 @@ import test from "../Test/page";
 const LandingPage = () => {
   return (
     <div id="landingPage">
-      <Head>
-        <link rel="preload" href="/RectangleRight.png" as="image" />
-        <link rel="preload" href="/RectangleLeft.png" as="image" />
-        <link rel="preload" href="/button-icon-shrunk.png" as="image" />
-      </Head>
+    
       <Header section="Intro" />
       <div className="landingContainer">
         <div className="landingMain">

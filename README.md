@@ -36,9 +36,11 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
 
 
-<!-- Summary of the Header Component: -->
+Summary of the Header Component:
 
-The Header component displays the app title "SKINSTRIC" and shows the current section of the page (such as Analysis, Intro, Results, etc.), which is passed in as a prop.
+The Header component displays the app title "SKINSTRIC" and 
+shows the current section of the page (such as Analysis, Intro, 
+Results, etc.), which is passed in as a prop.
 import React → allows JSX.
 import './header.css' → loads styles for this header.
 ({ section }) → receives a section value from the parent.
@@ -47,17 +49,15 @@ The app name: SKINSTRIC
 The section name wrapped in gray curly braces: { Analysis }, { Intro }, etc.
 Uses CSS classes like uppercase and gray for styling.
 
-In short:
+In short:  It’s a reusable header bar that shows the app name and the current section of the page.
 
-👉 It’s a reusable header bar that shows the app name and the current section of the page.
-
-<!-- The Test component: -->
+The Test component:
  collects the user's name and location in two steps, 
  sends the data to your backend,
   shows loading and success states, 
   and then lets the user continue to the next stage.
 
-  <!-- The Results component: -->
+  The Results component:
    lets the user upload an image, 
    converts it to Base64,
     sends it to your AI backend, 
@@ -65,7 +65,7 @@ In short:
      and navigates the user to the analysis page
       while showing a clean loading animation.
 
-<!-- Camera and capture page omponent:  -->
+Camera and capture page omponent: 
     opens the user’s camera,
      captures an image, 
      lets the user review it,
@@ -73,7 +73,7 @@ In short:
        stores the results, 
        and navigates to the analysis page with a clean loading animation.
 
-<!-- SUMMARY OF IA-ANALYSIS PAGE: -->
+SUMMARY OF IA-ANALYSIS PAGE:
 
 ✔ Displays a header
 ✔ Shows AI Analysis instructions
@@ -83,7 +83,7 @@ In short:
 ✔ Uses custom CSS from analysis.css
 ✔ Structured cleanly into top/middle/bottom sections
 
-<!-- SUMMARY OF SUMMARY PAGE -->
+SUMMARY OF SUMMARY PAGE
 ✔ Loads AI analysis data from localStorage
 ✔ Formats it into an easy-to-use structure
 ✔ Lets user switch between:

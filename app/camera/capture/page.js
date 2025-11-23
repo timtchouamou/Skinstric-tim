@@ -124,7 +124,7 @@ const camera = () => {
 
   return (
     <div id="camera">
-      <Header section="Intro" />
+      <Header section="Camera/Capture" />
       <div className="cameraContainer">
         {cameraActive && (
           <div className="cameraPopup">
