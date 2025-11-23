@@ -1,7 +1,17 @@
+// /** @type {import('next').NextConfig} */
+// const nextConfig = {
+//   /* config options here */
+//   reactCompiler: true,
+// };
+
+// export default nextConfig;
+
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  /* config options here */
-  reactCompiler: true,
+  experimental: {
+    optimizeCss: false, // disable automatic CSS preload optimization
+  },
 };
 
-export default nextConfig;
+module.exports = nextConfig;
