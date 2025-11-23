@@ -1,0 +1,196 @@
+h1 {
+    font-size: 750px;
+}
+
+.landingContainer {
+    margin-top: 100px;
+}
+
+.landingMain {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title {
+    font-size: 128px;
+    text-align: center;
+    transition: transform 1s ease, text-align 300ms ease;
+}
+
+.landingRight, .landingLeft{
+    position: relative;
+}
+
+.option{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    position: absolute;
+    top: 50%;                   
+    transform: translate(-50%, -50%);  
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.leftOption, .rightOption, .rectangle {
+    transition: opacity 1s ease;
+}
+
+.leftOption{
+    left: 30%;
+    
+}
+
+.rightOption{
+    left: 80%;
+    width: 150px;
+}
+
+.landingMain:has(.landingRight:hover)  .title {
+  transform: translateX(-20%);
+  text-align: left;
+}
+
+.landingMain:has(.landingRight:hover) .landingLeft .leftOption,
+.landingMain:has(.landingRight:hover) .landingLeft .rectangle {
+  opacity: 0;
+}
+
+.landingMain:has(.landingLeft:hover) .title {
+  transform: translateX(20%);
+  text-align: right;
+}
+
+.landingMain:has(.landingLeft:hover) .landingRight .rightOption,
+.landingMain:has(.landingLeft:hover) .landingRight .rectangle {
+  opacity: 0;
+}
+
+
+.rectangle{
+    object-fit: cover;
+}
+
+.arrowIcon{
+    width: 44px;
+    height: 44px;
+}
+
+.landingBottom{
+    margin-top: 50px;
+    width: 100%;
+}
+
+.landingPara{
+    text-align: left;
+    width: 400px;
+    padding-left: 52px;
+    font-size: 14px;
+}
+
+@media (max-width: 1600px) {
+    .leftOption, .rightOption{
+        left: 50%;
+    }
+
+}
+
+@media (max-width: 1200px) {
+    .title{
+        font-size: 100px;
+    }
+
+    .rectangle{
+        width: 200px;
+    }
+
+    .rightOption, .leftOption{
+        font-size: 12px;
+    }
+
+    .rightOption{
+        left: 70%;
+    }
+
+    .leftOption{
+        left: 40%;
+    }
+
+    .arrowIcon{
+        width: 30px;
+        height: 30px;
+    }
+}
+@media (max-width: 992px) {
+    .title{
+        font-size: 70px;
+    }
+
+    .rightOption{
+        left: 80%;
+    }
+
+    .leftOption{
+        left: 35%;
+    }
+
+    .arrowIcon{
+        width: 20px;
+        height: 20px;
+    }
+
+    .landingPara{
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 700px) {
+    .landingMain{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .rectangle, .arrowIcon, .leftOption {
+        display: none;
+    }
+
+    .rightOption {
+        border: 1px solid #1a1a2a;
+        width: 100px;
+        justify-content: center;
+        padding: 4px;
+        background-color: #1a1a2a;
+        color: white;
+        border-radius: 5px;
+        margin-top: 16px;
+    }
+
+    .landingBottom{
+        display: flex;
+        justify-content: center;
+    }
+
+    .landingPara{
+        text-align: center;
+        padding: 0;
+    }
+
+    .landingMain:has(.landingRight:hover)  .title {
+  transform: none;
+  text-align: center;
+}
+
+}
+
+@media (max-width: 500px){
+    .title{
+        font-size: 50px;
+    }
+
+    .landingPara{
+        max-width: 300px;
+    }
+
+}
