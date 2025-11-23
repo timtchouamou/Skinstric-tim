@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-import summaryStyle from "./summary.css";
+// import summaryStyle from "./summary.css";
 import Header from "@/components/header/header";
 import Link from "next/link";
 
